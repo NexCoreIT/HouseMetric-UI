@@ -100,7 +100,11 @@
         font-size: 28px;
     }
 
-    .accordion-body { 
+    .accordion-body {
         font-size: 15px;
+    }
+
+    .single_blog p {
+        font-size: 17px;
     }
 }
