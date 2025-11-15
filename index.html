@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - HouseMetric</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- =================== ---- Header Section ---- ==================== -->
+    <header class="header_sec">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/images/logo.svg" width="80" height="50" class="img-fluid" alt="Logo">
+                    </a>
+                    <button type="button" class="btn btn_nav d-block d-lg-none" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-menu-icon lucide-menu">
+                            <path d="M4 5h16" />
+                            <path d="M4 12h16" />
+                            <path d="M4 19h16" />
+                        </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <!-- Bootstrap 5 Navbar Menu -->
+                        <ul class="navbar-nav ms-auto align-items-center">
+
+                            <!-- Our  -->
+                            <li class="nav-item dropdown">
+                                <button class="nav-link" type="button" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Our Services
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu  dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="service-details.html">Real Estate Agents
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="service-details.html">Real Estate
+                                            Photographers
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="service-details.html">Architects</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="service-details.html">Real Estate
+                                            Developers
+                                        </a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="service-details.html">Consumers</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Our Services -->
+                            <!-- <li class="nav-item dropdown mega-dropdown position-static">
+                                <button class="nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Our services
+                                    <i class="fa fa-angle-down ms-1"></i>
+                                </button>
+
+                                <div class="dropdown-menu w-100 overflow-hidden mt-0 border-0 shadow mega-menu p-0">
+                                    <div class="row">
+
+
+                                        <div class="col-md-4">
+                                            <div class="image-layer loaded"
+                                                style="background-image: url('assets/images/our-webshop.webp');">
+                                                <div class="p-3 p-xl-5">
+                                                    <h5 class="mb-3 fw-bold text-white">HouseMetric Direct</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-2">
+                                            <div class="p-3 p-xl-5">
+                                                <h5 class="mb-3 fw-bold">Floorplans</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="servie-details.html">Interactive
+                                                            Floor Plans</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">2D Floor
+                                                            Plans</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-3">
+                                            <div class="p-3 p-xl-5">
+                                                <h5 class="mb-3 fw-bold">3D Architectural Rendering</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="servie-details.html">3D Interior
+                                                            Rendering</a></li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">3D Exterior
+                                                            Rendering</a></li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">3D Real
+                                                            Estate Rendering</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">360°
+                                                            Rendering</a></li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">360° Tours
+                                                            Visualizations</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">Birdeye View
+                                                            Visualizations</a>
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">Dollhouse
+                                                            Visualizations</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-3">
+                                            <div class="p-3 p-xl-5">
+                                                <h5 class="mb-3 fw-bold">Photo & Video Editing</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><a class="dropdown-item" href="servie-details.html">Photo &
+                                                            Video Editing</a></li>
+                                                    <li><a class="dropdown-item" href="servie-details.html">360° Tours
+                                                            Photos</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li> -->
+
+                            <!-- English -->
+                            <li class="nav-item dropdown">
+                                <div id="google_translate_element"></div>
+                            </li>
+
+                            <li class="nav-item">
+                                <button type="button" class="btn btn_nav" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-menu-icon lucide-menu">
+                                        <path d="M4 5h16" />
+                                        <path d="M4 12h16" />
+                                        <path d="M4 19h16" />
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end offvanas_menu" data-bs-backdrop="static" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-body position-relative px-lg-5">
+            <ul class="offcanvas_nav">
+                <li><a href="index.html">Our home </a></li>
+                <li><a href="service.html">Our services </a></li>
+                <li><a href="blog.html">Our Blog </a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-conditions.html">Terms Conditions</a></li>
+                <li><a href="contact.html">Get in touch! </a></li>
+            </ul>
+            <div class="social_item mt-5">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+            <button type="button" class="btn_close" data-bs-dismiss="offcanvas" aria-label="Close">
+                Close
+            </button>
+        </div>
+    </div>
+    <!-- =================== ---- Header Section ---- ==================== -->
+
+    <!-- =================== ---- Banner Section ---- ==================== -->
+    <div class="banner_sec position-relative overflow-hidden">
+        <video autoplay="" muted="" loop="" id="bg-video">
+            <source src="assets/images/banner.mp4" type="video/mp4">
+        </video>
+        <div class="banner_content">
+            <div class="text-center video-overlay">
+                <h2>Experts In Real Estate Marketing Services</h2>
+                <p>
+                    Welcome to HouseMetric Direct, your one-stop-shop for professional real estate marketing solutions.
+                    We
+                    specialize in creating high-quality floor plans and 3D renderings for real estate agents, brokers,
+                    and
+                    developers. In addition to these services, we also offer top-notch photo and video editing to help
+                    showcase your properties in the best possible light. Whether you're marketing commercial, leisure,
+                    or
+                    residential real estate, we've got you covered. Trust us to help you take your real estate marketing
+                    to
+                    the next level.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- =================== ---- Banner Section ---- ==================== -->
+
+    <!-- =================== ---- About Section ---- ==================== -->
+    <div class="about_section py-5">
+        <div class="container-fluid p-xl-0">
+            <div class="row gy-4 gy-lg d-flex align-items-center g-xl-0">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="about_img">
+                        <img src="assets/images/about.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="about_content sec_gap">
+                        <div class="section_heading">
+                            <h4 class="sec_sub text-uppercase">HouseMetric
+                                SOLUTIONS</h4>
+                            <h2 class="mb-4 sec_title">
+                                Transforming Real Estate Marketing with Innovation
+                            </h2>
+                        </div>
+                        <p class="mb-4">
+                            At HouseMetric Solutions, we combine creativity, technology, and strategy to redefine real
+                            estate marketing.
+                            From immersive 3D visualizations and cinematic property videos to engaging virtual tours, we
+                            help you
+                            showcase every project with clarity and impact. Our decade-long expertise ensures your
+                            properties
+                            don’t just get noticed—they get remembered.
+                        </p>
+                        <a href="#" class="secondary_btn position-relative text-uppercase">
+                            Discover How We Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================== ---- About Section ---- ==================== -->
+
+    <!-- =================== ---- Service Section ---- ==================== -->
+    <div class="service_sec py-5">
+        <div class="container">
+            <div class="section_heading pb-5 text-center">
+                <h4 class="sec_sub text-uppercase">HouseMetric Services</h4>
+                <h2 class="mb-4 sec_title">Our Services</h2>
+                <p class="mb-3 pe-xl-5 ">
+                    At HouseMetric Direct, we are proud to serve a diverse range of customers in the real estate
+                    industry.
+                    Our professional real estate presentations are designed to meet the needs of architects, real estate
+                    photographers, agents, and developers, as well as individual consumers looking to sell their home.
+                </p>
+                <p>
+                    Contact us today to learn more about how we can help you achieve your real estate goals.
+                </p>
+            </div>
+
+
+            <!-- Swiper Wrapper -->
+            <div class="swiper ServiceSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="service_item position-relative overflow-hidden">
+                            <div class="servie_img">
+                                <div class="overflow-hidden">
+                                    <a href="service-details.html">
+                                        <div class="box-bg overflow-hidden mb-4"
+                                            style="background-image: url('assets/images/property/9.webp');"></div>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h3 class="mb-3"><a href="service-details.html">Real Estate Agents</a></h3>
+                                    <p>
+                                        High quality property marketing for real estate agents is crucial in selling
+                                        your
+                                        properties quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="service_item position-relative overflow-hidden">
+                            <div class="servie_img">
+                                <div class="overflow-hidden">
+                                    <a href="service-details.html">
+                                        <div class="box-bg overflow-hidden mb-4"
+                                            style="background-image: url('assets/images/property/10.webp');"></div>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h3 class="mb-3"><a href="service-details.html">Real Estate
+                                            Photographers</a>
+                                    </h3>
+                                    <p>
+                                        High quality property marketing for real estate agents is crucial in selling
+                                        your
+                                        properties quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="service_item position-relative overflow-hidden">
+                            <div class="servie_img">
+                                <div class="overflow-hidden">
+                                    <a href="service-details.html">
+                                        <div class="box-bg overflow-hidden mb-4"
+                                            style="background-image: url('assets/images/property/11.webp');"></div>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h3 class="mb-3"><a href="service-details.html">Architects & designers</a>
+                                    </h3>
+                                    <p>
+                                        High quality property marketing for real estate agents is crucial in selling
+                                        your
+                                        properties quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="service_item position-relative overflow-hidden">
+                            <div class="servie_img">
+                                <div class="overflow-hidden">
+                                    <a href="service-details.html">
+                                        <div class="box-bg overflow-hidden mb-4"
+                                            style="background-image: url('assets/images/property/12.webp');"></div>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h3 class="mb-3"><a href="service-details.html">Consumers (B2C)</a></h3>
+                                    <p>
+                                        High quality property marketing for real estate agents is crucial in selling
+                                        your
+                                        properties quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="service_item position-relative overflow-hidden">
+                            <div class="servie_img">
+                                <div class="overflow-hidden">
+                                    <a href="service-details.html">
+                                        <div class="box-bg overflow-hidden mb-4"
+                                            style="background-image: url('assets/images/property/13.jpg');"></div>
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <h3 class="mb-3"><a href="service-details.html">Real Estate Developers</a>
+                                    </h3>
+                                    <p>
+                                        High quality property marketing for real estate agents is crucial in selling
+                                        your
+                                        properties quickly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+    </div>
+    <!-- =================== ---- Service Section ---- ==================== -->
+
+
+    <!-- =================== ---- Selection Section ---- ==================== -->
+    <div class="selection_sec py-5 mb-5">
+        <div class="container">
+            <div class="section_heading pb-5 text-center">
+                <h4 class="sec_sub mb-4 text-uppercase">HouseMetric SERVICES</h4>
+                <h2 class="sec_title">A selection of our services</h2>
+            </div>
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills mb-5 d-flex justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="floor-tab" data-bs-toggle="tab" data-bs-target="#floor"
+                        type="button" role="tab">
+                        FLOOR PLANS
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="visual-tab" data-bs-toggle="tab" data-bs-target="#visual" type="button"
+                        role="tab">
+                        VISUALIZATIONS
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="photo-tab" data-bs-toggle="tab" data-bs-target="#photo" type="button"
+                        role="tab">
+                        PHOTO & VIDEO EDITING
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="staging-tab" data-bs-toggle="tab" data-bs-target="#staging"
+                        type="button" role="tab">
+                        VIRTUAL STAGING
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="drone-tab" data-bs-toggle="tab" data-bs-target="#drone" type="button"
+                        role="tab">
+                        DRONE PHOTOGRAPHY
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="tour-tab" data-bs-toggle="tab" data-bs-target="#tour" type="button"
+                        role="tab">
+                        VIRTUAL TOURS
+                    </button>
+                </li>
+
+
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="serviceTabsContent">
+                <!-- FLOOR PLANS -->
+                <div class="tab-pane fade show active" id="floor" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="assets/images/property/6.webp" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Floor Plans</h3>
+                                <p>
+                                    Our interactive 2D and 3D floor plans are the perfect tool to showcase your
+                                    property’s potential. With detailed and accurate floor plans, potential buyers can
+                                    visualize the layout and all the possibilities. Our floor plans are digital,
+                                    interactive, and displayable in both 2D and 3D, making them easy to share and
+                                    display on any device. By providing potential buyers with an immersive and realistic
+                                    experience, you can attract more interested buyers and lead to a faster and more
+                                    successful sale. So why settle for a static floor plan when you can have an
+                                    interactive and immersive one? Contact us today to learn more.
+                                </p>
+
+                                <a href="#" class="primary-btn px-4">CHECK OUT ALL OUR SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VISUALIZATIONS -->
+                <div class="tab-pane fade" id="visual" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div id="comparison">
+                                <figure style="background-image: url('assets/images/property/5.webp');">
+                                    <div class="comparison_handle">
+                                    </div>
+                                    <div class="comparison_divisor"
+                                        style="background-image: url('assets/images/property/4.webp');">
+                                    </div>
+                                </figure>
+                                <input type="range" min="0" max="100" value="50" class="comparison_slider"
+                                    oninput="moveDivisor()">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Visualizations</h3>
+                                <p>
+                                    Our 3D modeling and rendering services create photorealistic images of your building
+                                    or renovation plans. From a photo or sketch, we can generate a 3D model that
+                                    showcases the full potential of your property.
+                                </p>
+                                <p>
+                                    With our visualizations, you can present your building or renovation plans in a way
+                                    that leaves nothing to the imagination. And with the ability to use the images on
+                                    real estate portals, brochures, and your own website, you can ensure that your
+                                    project stands out from the crowd.
+                                </p>
+                                <p>
+                                    So why settle for ordinary, uninspired visuals when you can have stunning,
+                                    photorealistic images that showcase the full potential of your property?
+
+                                </p>
+
+                                <a href="#" class="primary-btn me-2 m-1">CHECK OUT ALL OUR SERVICES</a>
+                                <a href="#" class="primary-btn px-4 m-1">SHOW BEFORE & AFTER</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHOTO & VIDEO EDITING -->
+                <div class="tab-pane fade" id="photo" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="assets/images/property/1.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Photo & Video Editing</h3>
+                                <p>
+                                    Unlock the full potential of your real estate photography! We provide premium photo
+                                    and video editing services for the real estate industry. We specialize in HDR photo
+                                    editing and advanced photo processing techniques to make property listings stand out
+                                    from the competition. We can also edit your real estate video presentations the way
+                                    you want to showcase them. With a background as real estate photographers ourselves,
+                                    we understand the unique challenges you face and are dedicated to helping you
+                                    succeed in a competitive market.
+                                </p>
+                                <a href="#" class="primary-btn px-4">CHECK OUT ALL OUR SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- staging -->
+                <div class="tab-pane fade" id="staging" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="assets/images/property/1.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Virtual Staging</h3>
+                                <p>
+                                    Transform empty rooms into beautifully furnished spaces! Our virtual staging service
+                                    adds stylish digital furniture, décor, and lighting to your photos to help buyers
+                                    visualize the true potential of any property.
+                                </p>
+                                <p>
+                                    Choose from multiple interior styles such as modern, luxury, minimalist,
+                                    Scandinavian,
+                                    or custom themes. Perfect for real estate listings, developers, and interior
+                                    designers.
+                                </p>
+
+                                <a href="#" class="primary-btn px-4">CHECK OUT ALL OUR SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- drone  -->
+                <div class="tab-pane fade" id="drone" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="assets/images/property/1.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Drone Photography</h3>
+                                <p>
+                                    Showcase your property from breathtaking aerial perspectives! Our drone photography
+                                    and
+                                    videography services deliver high-quality aerial shots that highlight landscapes,
+                                    surroundings, and overall property scale.
+                                </p>
+                                <p>
+                                    Perfect for luxury homes, commercial properties, land plots, and development sites.
+                                    Capture angles impossible with traditional photography to enhance your marketing
+                                    appeal.
+                                </p>
+
+                                <a href="#" class="primary-btn px-4">CHECK OUT ALL OUR SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="tour" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <img src="assets/images/property/1.png" class="img-fluid rounded" alt="">
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="selection_content px-xl-5">
+                                <h3 class="fw-bold mb-4">Virtual Tours (360°)</h3>
+                                <p>
+                                    Give buyers a complete walk-through experience! Our 360° virtual tours allow users
+                                    to
+                                    explore every room interactively—from any device. Perfect for remote buyers and
+                                    premium
+                                    real estate marketing.
+                                </p>
+                                <p>
+                                    We create seamless panoramic tours with hotspots, floor plans, and room navigation,
+                                    offering a realistic and immersive viewing experience.
+                                </p>
+
+                                <a href="#" class="primary-btn px-4">CHECK OUT ALL OUR SERVICES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <!-- =================== ---- Selection Section ---- ==================== -->
+
+
+
+    <!-- =================== ---- Blog Section ---- ==================== -->
+    <div class="blog_sec bg-light border-top border-bottom py-5">
+        <div class="container">
+            <div class="row gy-4 gy-lg-0">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="sticky-top" style="top:12rem;">
+                        <div class="section_heading sec_gap pe-0">
+                            <h4 class="sec_sub mb-4 text-uppercase">HouseMetric BUZZ
+                            </h4>
+                            <h2 class="mb-4 sec_title">
+                                We love to share
+                            </h2>
+                            <p class="mb-4">
+                                Getting the best results is all about working together and sharing knowledge. That's why
+                                we
+                                want to tell you about our work and our team in our Blinq Blog. But more importantly we
+                                want
+                                to give you tips and inspiration on how to get the best out of marketing your real
+                                estate.
+                            </p>
+                            <a href="blog.html" class="secondary_btn position-relative text-uppercase">
+                                TO THE BLINQ BLOG
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <div class="text-center">
+                        <div class="blog_item mb-4">
+                            <a href="single-blog.html" class="mb-3 d-block">
+                                <img src="assets/images/blogs/1.jpg" class="img-fluid"
+                                    alt="7 Phases of Architectural Design">
+                            </a>
+                            <div class="">
+                                <h5 class="mb-2"><a href="single-blog.html">7 Phases of Architectural Design</a></h5>
+                                <h6 class="mb-4">| Architecture</h6>
+                                <p>
+                                    Starting an architectural project can be a daunting task, filled with challenges and
+                                    uncertainties. Understanding the phases of architectural design is crucial to having
+                                    a roadmap that guides both architects…
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog_item mb-4">
+                            <a href="single-blog.html" class="mb-3 d-block">
+                                <img src="assets/images/blogs/2.jpg" class="img-fluid"
+                                    alt="Benefits of 3D Rendering in Real Estate and Architecture">
+                            </a>
+                            <div class="">
+                                <h5 class="mb-2">
+                                    <a href="single-blog.html">
+                                        Benefits of 3D Rendering in Real Estate and Architecture
+                                    </a>
+                                </h5>
+                                <h6 class="mb-4">| 3D rendering</h6>
+                                <p>
+                                    Key takeaways: 3D rendering creates realistic models of properties, designs,
+                                    structures, and landscapes giving clear previews before construction starts.
+                                    High-quality 3D renderings improve real estate marketing by showcasing properties
+                                    attractively…
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="blog_item mb-4">
+                            <a href="single-blog.html" class="mb-3 d-block">
+                                <img src="assets/images/blogs/1.jpg" class="img-fluid"
+                                    alt="Average master bedroom size breakdown">
+                            </a>
+                            <div class="">
+                                <h5 class="mb-2"><a href="single-blog.html">Average master bedroom size breakdown</a>
+                                </h5>
+                                <h6 class="mb-4">| blog</h6>
+                                <p>
+                                    Choosing the right size for your master bedroom also known as primary bedroom or
+                                    main bedroom is essential for creating a comfortable and functional living space
+                                    tailored to your needs.…
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================== ---- Blog Section ---- ==================== -->
+
+    <!-- =================== ---- Free Quote Section ---- ==================== -->
+    <div class="quote_sec py-5" style="background-image: url('assets/images/contact.webp');">
+        <div class="container">
+            <div class="quote_wrap">
+                <div class="section_heading pb-4 text-center">
+                    <h2 class="mb-4 sec_title">
+                        Free Quote
+                    </h2>
+                    <p class="mb-2">
+                        Do you want to know how we can help you to get the best possible presentation for your real
+                        estate?
+                    </p>
+                    <p>
+                        Get in touch with us and we’re happy to chat with you on all the possibilities we offer.
+                    </p>
+                </div>
+
+                <div class="quote_form">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control fs-5 rounded-0" placeholder="Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control fs-5 rounded-0" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="phone" class="form-control fs-5 rounded-0" placeholder="Phone"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="question" id="" class="form-control fs-5 rounded-0" rows="5" required
+                                placeholder="Remarks/Questions"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn rounded-0 px-5">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =================== ---- Free Quote Section ---- ==================== -->
+
+
+    <!-- =================== ---- Footer ---- ==================== -->
+    <footer class="footer py-4 py-lg-5">
+        <div class="container">
+            <div class="row gy-4 gy-lg-0 d-flex text-center text-lg-start align-items-center">
+                <div class="col-lg-3">
+                    <div class="wpb_wrapper">
+                        <p class="m-0">Real Estate Marketing</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer_menu text-center">
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="wpb_wrapper text-lg-end">
+                        <p class="m-0">© HouseMetricdirect 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =================== ---- Footer ---- ==================== -->
+
+
+    <!-- js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,nl',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
