@@ -346,13 +346,15 @@ body {
 
 
 .breadcrumb_sec {
-    height: 369px;
+    height: 450px;
     background-size: cover;
     background-position: center;
 }
 
 .breadcrumb_sec h2 {
-    margin: 0;
+    font-size: 45px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* ------------ About Us ------------ */
@@ -671,7 +673,7 @@ input.comparison_slider::-moz-range-track {
 /* ------------ BLog ------------ */
 
 .blog_item h5 a {
-    font-size: 18px;
+    font-size: 20px;
     color: var(--primary);
     font-weight: 500;
     margin-bottom: 12px;
@@ -789,4 +791,8 @@ input.comparison_slider::-moz-range-track {
     margin-bottom: 13px;
     padding: 1px 20px;
     border-radius: 7px !important;
+}
+
+.single_blog p {
+    font-size: 20px;
 }
