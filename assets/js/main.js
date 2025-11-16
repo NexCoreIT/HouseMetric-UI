@@ -27,38 +27,3 @@ var swiper = new Swiper(".ServiceSwiper", {
         1200: { slidesPerView: 3 },
     }
 });
-
-function imageLoaded(img) {
-    img.style.display = 'block';
-
-    // Check if all images are loaded
-    const container = img.closest('.loader-container');
-    const images = container.querySelectorAll('.before_after img');
-    let allLoaded = true;
-    images.forEach(image => {
-        if (!image.complete) {
-            allLoaded = false;
-        }
-    });
-
-    // If all images are loaded, hide the loader
-    if (allLoaded) {
-        const loader = container.querySelector('.loader');
-        if (loader) {
-            loader.style.display = 'none';
-        }
-    }
-}
-
-// Check if images are already loaded (for cached images)
-document.querySelectorAll('.before_after img').forEach(img => {
-    if (img.complete) {
-        imageLoaded(img);
-    }
-});
-
-$(document).ready(function () {
-    $(".before_after").each(function () {
-        $(this).twentytwenty();
-    });
-});

@@ -90,6 +90,13 @@ body {
 /* ------------ Header ------------ */
 
 .header_sec {
+    position: relative;
+    width: 100%;
+    background: #f0f0f0;
+    z-index: 6;
+}
+
+.header_sec.home {
     position: absolute;
     width: 100%;
     background: linear-gradient(180deg, #0000003b, #ffffff00);
@@ -98,7 +105,11 @@ body {
 
 .header_sec .nav-link {
     font-size: 17px;
-    color: #fff;
+    color: #000000;
+}
+
+.header_sec.home .nav-link {
+    color: #ffffff;
 }
 
 .header_sec .nav-item {
@@ -295,7 +306,7 @@ body {
 .banner_sec {
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .banner_content h2 {
@@ -346,16 +357,20 @@ body {
 
 
 .breadcrumb_sec {
-    height: 450px;
+    height: 250px;
     background-size: cover;
     background-position: center;
 }
 
 .breadcrumb_sec h2 {
-    font-size: 45px;
+    font-size: 36px;
     max-width: 800px;
     margin: 0 auto;
 }
+
+
+
+
 
 /* ------------ About Us ------------ */
 
@@ -374,7 +389,7 @@ body {
 .sec_title {
     text-transform: none;
     letter-spacing: -0.03em;
-    font-size: 46px;
+    font-size: 36px;
     font-weight: 400;
     color: #000000;
 }
@@ -821,4 +836,4 @@ input.comparison_slider::-moz-range-track {
 .step-card p {
     margin: 0;
     font-size: 18px;
-} 
+}

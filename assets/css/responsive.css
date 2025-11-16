@@ -33,7 +33,7 @@
 
 
     .banner_content h2 {
-        font-size: 45px;
+        font-size: 50px;
     }
 }
 
@@ -51,7 +51,7 @@
     }
 
     .banner_content h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .selection_content h3 {
@@ -74,9 +74,19 @@
         font-size: 18px;
     }
 
+    .breadcrumb_sec {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+
 }
 
 @media screen and (max-width:575px) {
+
+     
+
     .secondary_btn {
         font-size: 14px;
     }
@@ -88,16 +98,16 @@
     }
 
     .banner_content h2 {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     .banner_content p {
-        font-size: 16px;
+        font-size: 15px;
         color: #fff;
     }
 
     .breadcrumb_sec h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .accordion-body {
@@ -107,4 +117,13 @@
     .single_blog p {
         font-size: 17px;
     }
+
+    .sec_title {
+        font-size: 20px;
+    }
+
+    .quote_wrap {
+        padding: 25px;
+    }
+
 }

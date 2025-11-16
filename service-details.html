@@ -30,12 +30,12 @@
     <!-- =================== ---- Header Section ---- ==================== -->
     <header class="header_sec">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-sm">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">
                         <img src="assets/images/logo.svg" width="80" height="50" class="img-fluid" alt="Logo">
                     </a>
-                    <button type="button" class="btn btn_nav d-block d-lg-none" data-bs-toggle="offcanvas"
+                    <button type="button" class="btn btn_nav d-block d-sm-none" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -567,7 +567,7 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
                 pageLanguage: 'en',
@@ -578,11 +578,47 @@
         }
     </script>
 
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
     <script defer src="assets/js/jquery.event.move.js"></script>
     <script defer src="assets/js/jquery.twentytwenty.js"></script>
     <script defer src="assets/js/main.js"></script>
+    <script>
 
+        function imageLoaded(img) {
+            img.style.display = 'block';
+
+            // Check if all images are loaded
+            const container = img.closest('.loader-container');
+            const images = container.querySelectorAll('.before_after img');
+            let allLoaded = true;
+            images.forEach(image => {
+                if (!image.complete) {
+                    allLoaded = false;
+                }
+            });
+
+            // If all images are loaded, hide the loader
+            if (allLoaded) {
+                const loader = container.querySelector('.loader');
+                if (loader) {
+                    loader.style.display = 'none';
+                }
+            }
+        }
+
+        // Check if images are already loaded (for cached images)
+        document.querySelectorAll('.before_after img').forEach(img => {
+            if (img.complete) {
+                imageLoaded(img);
+            }
+        });
+
+        $(document).ready(function () {
+            $(".before_after").each(function () {
+                $(this).twentytwenty();
+            });
+        });
+    </script>
 
 </body>
 
