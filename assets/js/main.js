@@ -28,28 +28,37 @@ var swiper = new Swiper(".ServiceSwiper", {
     }
 });
 
+function imageLoaded(img) {
+    img.style.display = 'block';
 
-$(document).ready(function () {
-
-    $(".comparison").each(function () {
-
-        let $wrap = $(this);
-        let $divisor = $wrap.find(".comparison_divisor");
-        let $handle = $wrap.find(".comparison_handle");
-        let $slider = $wrap.find(".comparison_slider");
-
-        function moveDivisor() {
-            let val = $slider.val() + "%";
-            $divisor.css("width", val);
-            $handle.css("left", val);
+    // Check if all images are loaded
+    const container = img.closest('.loader-container');
+    const images = container.querySelectorAll('.before_after img');
+    let allLoaded = true;
+    images.forEach(image => {
+        if (!image.complete) {
+            allLoaded = false;
         }
-
-        moveDivisor();
-
-        $slider.on("input change", function () {
-            moveDivisor();
-        });
-
     });
 
+    // If all images are loaded, hide the loader
+    if (allLoaded) {
+        const loader = container.querySelector('.loader');
+        if (loader) {
+            loader.style.display = 'none';
+        }
+    }
+}
+
+// Check if images are already loaded (for cached images)
+document.querySelectorAll('.before_after img').forEach(img => {
+    if (img.complete) {
+        imageLoaded(img);
+    }
+});
+
+$(document).ready(function () {
+    $(".before_after").each(function () {
+        $(this).twentytwenty();
+    });
 });

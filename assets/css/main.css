@@ -809,7 +809,7 @@ input.comparison_slider::-moz-range-track {
 
 .step-number {
     font-size: 18px;
-    color: var(--primary); 
+    color: var(--primary);
 }
 
 .step-card h3 {
@@ -821,4 +821,4 @@ input.comparison_slider::-moz-range-track {
 .step-card p {
     margin: 0;
     font-size: 18px;
-}
+} 
