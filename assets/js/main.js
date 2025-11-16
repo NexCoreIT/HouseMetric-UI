@@ -29,21 +29,27 @@ var swiper = new Swiper(".ServiceSwiper", {
 });
 
 
-// comparison image
 $(document).ready(function () {
-    var $divisor = $(".comparison_divisor"),
-        $handle = $(".comparison_handle"),
-        $slider = $(".comparison_slider");
 
-    function moveDivisor() {
-        let val = $slider.val() + "%";
-        $handle.css("left", val);
-        $divisor.css("width", val);
-    }
+    $(".comparison").each(function () {
 
-    moveDivisor();
+        let $wrap = $(this);
+        let $divisor = $wrap.find(".comparison_divisor");
+        let $handle = $wrap.find(".comparison_handle");
+        let $slider = $wrap.find(".comparison_slider");
 
-    $slider.on("input change", function () {
+        function moveDivisor() {
+            let val = $slider.val() + "%";
+            $divisor.css("width", val);
+            $handle.css("left", val);
+        }
+
         moveDivisor();
+
+        $slider.on("input change", function () {
+            moveDivisor();
+        });
+
     });
+
 });

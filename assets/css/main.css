@@ -544,14 +544,14 @@ body {
 }
 
 
-#comparison {
+.comparison {
     width: 100%;
     padding-bottom: 100%;
     overflow: hidden;
     position: relative;
 }
 
-#comparison figure {
+.comparison figure {
     position: absolute;
     background-size: cover;
     font-size: 0;
@@ -795,4 +795,30 @@ input.comparison_slider::-moz-range-track {
 
 .single_blog p {
     font-size: 20px;
+}
+
+.howitworks__v1 .arch-line {
+    position: absolute;
+    top: 15px;
+    width: 150px;
+    right: 0;
+    left: calc(100% + 24px);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.step-number {
+    font-size: 18px;
+    color: var(--primary); 
+}
+
+.step-card h3 {
+    font-size: 21px !important;
+    font-weight: 600;
+    color: #212121;
+}
+
+.step-card p {
+    margin: 0;
+    font-size: 18px;
 }
